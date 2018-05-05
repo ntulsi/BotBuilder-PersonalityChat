@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{356A4EE2-684F-461A-94E0-323782163FF8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Library", "Library", "{F8F3BE81-DC5E-4F9A-ACAA-18C3BF1409BB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{E7FCF87B-A34F-4738-B1D0-C34352388C0F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Bot.Builder.PersonalityChat", "Library\Microsoft.Bot.Builder.PersonalityChat.csproj", "{CBFE0D35-D6C2-4B25-A498-CFC474A2C3A5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Bot.Builder.PersonalityChat.Sample.Basic", "Samples\SimplePersonalityChatBot\Microsoft.Bot.Builder.PersonalityChat.Sample.Basic.csproj", "{5F840490-32EE-46BD-9932-DD7F99F720D0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Bot.Builder.PersonalityChat.Tests", "Test\Microsoft.Bot.Builder.PersonalityChat.Tests.csproj", "{65D0DA07-2F36-4FBA-8607-574B42D66C06}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Bot.Builder.PersonalityChat.Sample.CustomResponses", "Samples\PersonalityChatBotWithCustomResponses\Microsoft.Bot.Builder.PersonalityChat.Sample.CustomResponses.csproj", "{E0AD3A90-DA19-41B3-AECA-CEA97D1F3C7B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CBFE0D35-D6C2-4B25-A498-CFC474A2C3A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBFE0D35-D6C2-4B25-A498-CFC474A2C3A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBFE0D35-D6C2-4B25-A498-CFC474A2C3A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBFE0D35-D6C2-4B25-A498-CFC474A2C3A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F840490-32EE-46BD-9932-DD7F99F720D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F840490-32EE-46BD-9932-DD7F99F720D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F840490-32EE-46BD-9932-DD7F99F720D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F840490-32EE-46BD-9932-DD7F99F720D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65D0DA07-2F36-4FBA-8607-574B42D66C06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65D0DA07-2F36-4FBA-8607-574B42D66C06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65D0DA07-2F36-4FBA-8607-574B42D66C06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65D0DA07-2F36-4FBA-8607-574B42D66C06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0AD3A90-DA19-41B3-AECA-CEA97D1F3C7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0AD3A90-DA19-41B3-AECA-CEA97D1F3C7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0AD3A90-DA19-41B3-AECA-CEA97D1F3C7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0AD3A90-DA19-41B3-AECA-CEA97D1F3C7B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CBFE0D35-D6C2-4B25-A498-CFC474A2C3A5} = {F8F3BE81-DC5E-4F9A-ACAA-18C3BF1409BB}
+		{5F840490-32EE-46BD-9932-DD7F99F720D0} = {356A4EE2-684F-461A-94E0-323782163FF8}
+		{65D0DA07-2F36-4FBA-8607-574B42D66C06} = {E7FCF87B-A34F-4738-B1D0-C34352388C0F}
+		{E0AD3A90-DA19-41B3-AECA-CEA97D1F3C7B} = {356A4EE2-684F-461A-94E0-323782163FF8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E5CD6B7B-3768-4747-97D4-1A7B8ADD86D0}
+	EndGlobalSection
+EndGlobal

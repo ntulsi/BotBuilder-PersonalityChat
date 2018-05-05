@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Microsoft.Bot.Builder.PersonalityChat</id>
+    <version>3.0.0-alpha-m1.0</version>
+    <authors>Microsoft</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+      Provide Personality Chat Service and base dialog for the Bot Builder V3.
+    </description>
+    <projectUrl>https://github.com/Microsoft/BotBuilder-PersonalityChat</projectUrl>
+    <iconUrl>http://docs.botframework.com/images/bot_icon.png</iconUrl>
+    <summary>Personality Chat extension for Microsoft Bot Builder.</summary>
+    <language>en-US</language>
+    <dependencies>
+      <dependency id="Newtonsoft.Json" version="9.0.1" />
+      <dependency id="Microsoft.Bot.Builder.PersonalityChat.Core" version="1.0.0-alpha-m1.0" />
+      <dependency id="Microsoft.Bot.Builder" version="3.12.2.4" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="bin\release\Microsoft.Bot.Builder.PersonalityChat.dll" target="lib\net46"/>
+    <file src="bin\release\Microsoft.Bot.Builder.PersonalityChat.pdb" target="lib\net46" />
+    <file src="bin\release\Microsoft.Bot.Builder.PersonalityChat.xml" target="lib\net46" />
+    <file src="**\*.cs" exclude="**\obj\**\*.cs" target="src" />
+  </files>
+</package>

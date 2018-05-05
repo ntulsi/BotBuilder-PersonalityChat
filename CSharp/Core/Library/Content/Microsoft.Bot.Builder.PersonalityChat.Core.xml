@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.Bot.Builder.PersonalityChat.Core</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.Bot.Builder.PersonalityChat.Core.PersonalityChatOptions">
+            <summary>
+            The PersonalityChatApi information required to build the request. 
+            </summary>
+        </member>
+        <member name="M:Microsoft.Bot.Builder.PersonalityChat.Core.PersonalityChatOptions.#ctor(System.String,Microsoft.Bot.Builder.PersonalityChat.Core.PersonalityChatPersona,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}})">
+            <summary>
+            Constructs the PersonalityChatOptions using the options.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Bot.Builder.PersonalityChat.Core.PersonalityChatOptions.SubscriptionKey">
+            <summary>
+            The Subscription Key to access PersonalityChatAPI
+            </summary>
+        </member>
+        <member name="P:Microsoft.Bot.Builder.PersonalityChat.Core.PersonalityChatOptions.BotPersona">
+            <summary>
+            The required persona for Bot.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Bot.Builder.PersonalityChat.Core.PersonalityChatOptions.scenarioResponse">
+            <summary>
+            Customizable ScenarioResponse list.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Bot.Builder.PersonalityChat.Core.PersonalityChatRequest">
+            <summary>
+            Personality Chat API request object.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Bot.Builder.PersonalityChat.Core.PersonalityChatRequest.#ctor(System.String,Microsoft.Bot.Builder.PersonalityChat.Core.PersonalityChatPersona)">
+            <summary>
+            Constructs the PersonalityChat request.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Bot.Builder.PersonalityChat.Core.PersonalityChatRequest.Query">
+            <summary>
+            User Query for the personality chat API request.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Bot.Builder.PersonalityChat.Core.PersonalityChatRequest.Persona">
+            <summary>
+            Bot Persona for the Personality chat API request.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Bot.Builder.PersonalityChat.Core.PersonalityChatResults">
+            <summary>
+            PersonalityChatAPI result.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Bot.Builder.PersonalityChat.Core.PersonalityChatResults.ScenarioList">
+            <summary>
+            The list of scenarios for the query.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Bot.Builder.PersonalityChat.Core.PersonalityChatResults.IsChatQuery">
+            <summary>
+            A flag denoting the query as chat or not.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Bot.Builder.PersonalityChat.Core.PersonalityChatResults.Scenario">
+            <summary>
+            Metadata for each Scenario.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Bot.Builder.PersonalityChat.Core.PersonalityChatResults.Scenario.ScenarioName">
+            <summary>
+            The name of the scenario.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Bot.Builder.PersonalityChat.Core.PersonalityChatResults.Scenario.Score">
+            <summary>
+            The score in range [0,1] for the scenario.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Bot.Builder.PersonalityChat.Core.PersonalityChatResults.Scenario.Responses">
+            <summary>
+            The available list of responses for the scenario. 
+            </summary>
+        </member>
+        <member name="T:Microsoft.Bot.Builder.PersonalityChat.Core.PersonalityChatService">
+            <summary>
+            PersonalityChatService for calling API and parsing the result.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Bot.Builder.PersonalityChat.Core.PersonalityChatService.SubscriptionKeyHeader">
+            <summary>
+            The header name for subscription Key of API.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Bot.Builder.PersonalityChat.Core.PersonalityChatService.UriBase">
+            <summary>
+            The base URI for accessing PersonalityChat Service.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Bot.Builder.PersonalityChat.Core.PersonalityChatService.#ctor(Microsoft.Bot.Builder.PersonalityChat.Core.PersonalityChatOptions)">
+            <summary>
+            Build the query uri for the query text.
+            </summary>
+            <param name="personalityChatOptions">Construct the PersonalityChat Service using personalitychat information.</param>
+            <returns>PersonalityChat service instance</returns>
+        </member>
+        <member name="M:Microsoft.Bot.Builder.PersonalityChat.Core.PersonalityChatService.QueryServiceAsync(System.String)">
+            <summary>
+            Query the PersonalityChat service using query.
+            </summary>
+            <returns>The PersonalityChat service results.</returns>
+        </member>
+    </members>
+</doc>
