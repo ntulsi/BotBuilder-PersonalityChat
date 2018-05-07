@@ -12,8 +12,12 @@ Personality Chat makes it easy to add small talk capabilities to your chatbot. S
 There are three ways of integrating Personality Chat in your application or chat bot. Microsoft Bot Framework-based bots have support in v3 and v4 SDK. Else you can also call the Personality Chat API directly.
 1. [Personality Chat in Microsoft Bot Framework SDK v3](CSharp/PersonalityChat-BotBuilderV3/README.md)
 2. [Personality Chat in Microsoft Bot Framework SDK v4](CSharp/PersonalityChat/README.md)
-3. [Calling Personality Chat API directly](CSharp/PersonalityChat/Core/README.md)
-4. [Use the Personality Chat dataset](Datasets/README.md)
+3. [Calling Personality Chat API directly](CSharp/Core/README.md)
+4. [Use the Personality Chat dataset](CSharp/Datasets/README.md)
+
+Download the [Microsoft.Bot.Builder.PersonalityChat](https://www.nuget.org/packages?q=microsoft.bot.builder.personalitychat) Nuget packages 
+
+Check out a [sample end-to-end chatbot](CSharp/EndToEndSamples/PersonalityChatWeatherBot) with Bot Builder SDK v4.
 
 ## How Personality Chat API works
 Personality Chat matches the user's small talk query with a small talk scenario. It does query understanding (QU) to lexically and semantically match a user query.  All matched scenarios are returned along with the confidence score. If no scenario is matched, no response is returned. Additionally is also checks for a few indicators to determine how to respond.
