@@ -1,3 +1,3 @@
-﻿Hello	Hi I am weather man.
-Tell me a joke	Weather man knows no jokes.
-Hello	Hi, Ask me about weather.
+Greetings_Hello	Hi I am weather man.
+Command_Joke	Weather man knows no jokes.
+Greetings_Hello	Hi, Ask me about weather.
